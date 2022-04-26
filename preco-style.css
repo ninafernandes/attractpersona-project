@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --yellow: #FFBF35;
+    --darkyellow: #F9B930; 
+    --fontColor:  #4F4C4C;
+    --lightred: #EF8080;
+ }
+ 
+
+ 
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: Gordita;
+     text-decoration: none;
+     list-style-type: none;
+     
+ }
+ 
+ .nav-container {
+     width: 100%;
+ }
+ 
+ .navbar {
+     display: grid;
+     grid-template-columns: 0.2fr auto 1fr;
+     align-items: center;
+     height: 80px;
+     width: 90%;
+     max-width: 1720px;
+     margin: 0 auto;
+ }
+ 
+ #navbar-logo {
+     width: 60px;
+     justify-self: start;
+ }
+ 
+ #navbar-logo {
+     cursor: pointer;
+ }
+ 
+ .nav-menu {
+     display: grid;
+     grid-template-columns: repeat(5, auto);
+     list-style: none;
+     text-align: center;
+     width: 70%;
+     justify-self: end;
+ }
+ 
+ .nav-links {
+     color: var(--fontColor);
+     text-decoration: none;
+     font-weight: 600;
+ }
+ 
+ .nav-links:hover {
+     color: var(--darkyellow);
+     transition: all 0.2s ease-out;
+ }
+ 
+ .nav-links-btn {
+     background-color: var(--yellow);
+     padding: 10px 16px;
+     color: white;
+     border-radius: 12px;
+     font-weight: 600;
+     font-size: 18px;
+     outline: none;
+     text-decoration: none;
+ }
+ 
+ .nav-links-btn:hover {
+     background-color: var(--darkyellow);
+     color: white;
+ }
+ 
+ .menu-toggle .bar {
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     transition: all 0.3s ease-in-out;
+     background-color: var(--lightred);
+ }
+
+ #nav-menu-preco {
+     border-bottom: #FFBF35 4px solid;
+     border-end-end-radius: 4px;
+     border-bottom-left-radius: 4px;
+ }
+
+ .main-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ .main-text-container {
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     text-align: center; 
+     color: #4F4C4C;
+     gap: 20px;
+ }
+
+ .main-text-msg {
+     font-family: 'Gabriela', sans-serif;
+     font-size: 30px;
+ }
+
+ .main-text-aulas {
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+ }
+
+ .pricing-plan-main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Poppins', sans-serif;
+     min-height: 100vh;
+ }
+
+ .panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #fff1b4;
+    
+}
+.pricing-plan:last-child {
+    border-bottom: none;
+    
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features{
+    margin: 50px 0 25px;
+    color: #46005f;
+
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #fff1b4;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #fff1b4;
+}
+
+.pricing-price {
+    color: #ffbf35;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #ff9794;
+    border-radius: 10px;
+    color: #ea6565;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #ffe4df;
+}
+
+.pricing-button.is-featured {
+    background-color: #ea6565;
+    color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    background-color: #ea5165;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #fff1b4;
+        padding: 0px 54px;
+        padding-right: 30px;
+       
+    }
+    
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
